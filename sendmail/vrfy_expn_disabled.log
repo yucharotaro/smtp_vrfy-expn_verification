@@ -1,0 +1,29 @@
+$ telnet 172.24.0.2 25
+Trying 172.24.0.2...
+Connected to 172.24.0.2.
+Escape character is '^]'.
+220 host.smtp-vrfy-expn.com ESMTP Sendmail 8.14.7/8.14.7; Fri, 2 Jul 2021 06:28:02 GMT
+EHLO test
+250-host.smtp-vrfy-expn.com Hello TP-X250 [172.24.0.1] (may be forged), pleased to meet you
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-8BITMIME
+250-SIZE
+250-DSN
+250-ETRN
+250-DELIVERBY
+250 HELP
+VRFY root
+252 2.5.2 Cannot VRFY user; try RCPT to attempt delivery (or try finger)
+VRFY postmaster
+252 2.5.2 Cannot VRFY user; try RCPT to attempt delivery (or try finger)
+VRFY random2525
+252 2.5.2 Cannot VRFY user; try RCPT to attempt delivery (or try finger)
+EXPN postmaster
+502 5.7.0 Sorry, we do not allow this operation
+EXPN random2525
+502 5.7.0 Sorry, we do not allow this operation
+quit
+221 2.0.0 host.smtp-vrfy-expn.com closing connection
+Connection closed by foreign host.
+

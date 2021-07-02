@@ -1,0 +1,26 @@
+$ telnet 172.22.0.2 25
+trying 172.22.0.2...
+Connected to 172.22.0.2.
+Escape character is '^]'.
+220 host.smtp-vrfy-expn.com ESMTP Postfix
+EHLO test
+250-host.smtp-vrfy-expn.com
+250-PIPELINING
+250-SIZE 10240000
+250-ETRN
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250 DSN
+VRFY root
+502 5.5.1 VRFY command is disabled
+VRFY postmaster
+502 5.5.1 VRFY command is disabled
+VRFY random2525
+502 5.5.1 VRFY command is disabled
+EXPN postmaster
+502 5.5.2 Error: command not recognized
+EXPN random2525
+502 5.5.2 Error: command not recognized
+quit
+221 2.0.0 Bye
+Connection closed by foreign host.
