@@ -1,0 +1,125 @@
+$ telnet 172.21.0.1 25
+Trying 172.21.0.1...
+Connected to 172.21.0.1.
+Escape character is '^]'.
+220 host.example.org ESMTP Exim 4.94.2 Tue, 28 Sep 2021 08:25:30 +0000
+EHLO test
+250-host.example.org Hello tp-x250.local [172.21.0.1]
+250-SIZE 52428800
+250-8BITMIME
+250-PIPELINING
+250-PIPE_CONNECT
+250-CHUNKING
+250-STARTTLS
+250-PRDR
+250 HELP
+VRFY root
+501 root: recipient address must contain a domain
+VRFY root@localhost
+252 Administrative prohibition
+VRFY root@host.example.org
+252 Administrative prohibition
+VRFY root@miss.example.org
+252 Administrative prohibition
+VRFY root@host.miss.org
+252 Administrative prohibition
+VRFY root@host
+252 Administrative prohibition
+VRFY root@miss
+252 Administrative prohibition
+VRFY root@example.org
+252 Administrative prohibition
+VRFY root@miss.org
+252 Administrative prohibition
+VRFY postmaster
+252 Administrative prohibition
+VRFY postmaster@localhost
+252 Administrative prohibition
+VRFY postmaster@host.example.org
+252 Administrative prohibition
+VRFY postmaster@miss.example.org
+252 Administrative prohibition
+VRFY postmaster@host.miss.org
+252 Administrative prohibition
+VRFY postmaster@host
+252 Administrative prohibition
+VRFY postmaster@miss
+252 Administrative prohibition
+VRFY postmaster@example.org
+252 Administrative prohibition
+VRFY postmaster@miss.org
+252 Administrative prohibition
+VRFY random2525
+501 random2525: recipient address must contain a domain
+VRFY random2525@localhost
+252 Administrative prohibition
+VRFY random2525@host.example.org
+252 Administrative prohibition
+VRFY random2525@miss.example.org
+252 Administrative prohibition
+VRFY random2525@host.miss.org
+252 Administrative prohibition
+VRFY random2525@host
+252 Administrative prohibition
+VRFY random2525@miss
+252 Administrative prohibition
+VRFY random2525@example.org
+252 Administrative prohibition
+VRFY random2525@miss.org
+252 Administrative prohibition
+EXPN root
+550 Administrative prohibition
+EXPN root@localhost
+550 Administrative prohibition
+EXPN root@host.example.org
+550 Administrative prohibition
+EXPN root@miss.example.org
+550 Administrative prohibition
+EXPN root@host.miss.org
+550 Administrative prohibition
+EXPN root@host
+550 Administrative prohibition
+EXPN root@miss
+550 Administrative prohibition
+EXPN root@example.org
+550 Administrative prohibition
+EXPN root@miss.org
+550 Administrative prohibition
+EXPN postmaster
+550 Administrative prohibition
+EXPN postmaster@localhost
+550 Administrative prohibition
+EXPN postmaster@host.example.org
+550 Administrative prohibition
+EXPN postmaster@miss.example.org
+550 Administrative prohibition
+EXPN postmaster@host.miss.org
+550 Administrative prohibition
+EXPN postmaster@host
+550 Administrative prohibition
+EXPN postmaster@miss
+550 Administrative prohibition
+EXPN postmaster@example.org
+550 Administrative prohibition
+EXPN postmaster@miss.org
+550 Administrative prohibition
+EXPN random2525
+550 Administrative prohibition
+EXPN random2525@localhost
+550 Administrative prohibition
+EXPN random2525@host.example.org
+550 Administrative prohibition
+EXPN random2525@miss.example.org
+550 Administrative prohibition
+EXPN random2525@host.miss.org
+550 Administrative prohibition
+EXPN random2525@host
+550 Administrative prohibition
+EXPN random2525@miss
+550 Administrative prohibition
+EXPN random2525@example.org
+550 Administrative prohibition
+EXPN random2525@miss.org
+550 Administrative prohibition
+221 host.example.org closing connection
+Connection closed by foreign host.

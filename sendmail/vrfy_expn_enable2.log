@@ -1,0 +1,126 @@
+$ telnet 172.20.0.1 25
+Trying 172.20.0.1...
+Connected to 172.20.0.1.
+Escape character is '^]'.
+220 host.example.org ESMTP Sendmail 8.14.7/8.14.7; Tue, 28 Sep 2021 06:46:36 GMT
+EHLO test
+250-host.example.org Hello TP-X250 [172.20.0.1] (may be forged), pleased to meet you
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-EXPN
+250-VERB
+250-8BITMIME
+250-SIZE
+250-DSN
+250-ETRN
+250-DELIVERBY
+250 HELP
+VRFY root
+250 2.1.5 root <root@host.example.org>
+VRFY root@localhost
+250 2.1.5 root <root@host.example.org>
+VRFY root@host.example.org
+250 2.1.5 root <root@host.example.org>
+VRFY root@miss.example.org
+252 2.1.5 <root@miss.example.org>
+VRFY root@host.miss.org
+252 2.1.5 <root@host.miss.org>
+VRFY root@host
+252 2.1.5 <root@host>
+VRFY root@miss
+252 2.1.5 <root@miss>
+VRFY root@example.org
+252 2.1.5 <root@example.org>
+VRFY root@miss.org
+252 2.1.5 <root@miss.org>
+VRFY postmaster
+250 2.1.5 <postmaster@host.example.org>
+VRFY postmaster@localhost
+250 2.1.5 <postmaster@host.example.org>
+VRFY postmaster@host.example.org
+250 2.1.5 <postmaster@host.example.org>
+VRFY postmaster@miss.example.org
+252 2.1.5 <postmaster@miss.example.org>
+VRFY postmaster@host.miss.org
+252 2.1.5 <postmaster@host.miss.org>
+VRFY postmaster@host
+252 2.1.5 <postmaster@host>
+VRFY postmaster@miss
+252 2.1.5 <postmaster@miss>
+VRFY postmaster@example.org
+252 2.1.5 <postmaster@example.org>
+VRFY postmaster@miss.org
+252 2.1.5 <postmaster@miss.org>
+VRFY random2525
+550 5.1.1 random2525... User unknown
+VRFY random2525@localhost
+550 5.1.1 random2525@localhost... User unknown
+VRFY random2525@host.example.org
+550 5.1.1 random2525@host.example.org... User unknown
+VRFY random2525@miss.example.org
+252 2.1.5 <random2525@miss.example.org>
+VRFY random2525@host.miss.org
+252 2.1.5 <random2525@host.miss.org>
+VRFY random2525@host
+252 2.1.5 <random2525@host>
+VRFY random2525@miss
+252 2.1.5 <random2525@miss>
+VRFY random2525@example.org
+252 2.1.5 <random2525@example.org>
+VRFY random2525@miss.org
+252 2.1.5 <random2525@miss.org>
+EXPN root
+250 2.1.5 root <root@host.example.org>
+EXPN root@localhost
+250 2.1.5 root <root@host.example.org>
+EXPN root@host.example.org
+250 2.1.5 root <root@host.example.org>
+EXPN root@miss.example.org
+250 2.1.5 <root@miss.example.org>
+EXPN root@host.miss.org
+250 2.1.5 <root@host.miss.org>
+EXPN root@host
+250 2.1.5 <root@host>
+EXPN root@miss
+250 2.1.5 <root@miss>
+EXPN root@example.org
+250 2.1.5 <root@example.org>
+EXPN root@miss.org
+250 2.1.5 <root@miss.org>
+EXPN postmaster
+250 2.1.5 root <root@host.example.org>
+EXPN postmaster@localhost
+250 2.1.5 root <root@host.example.org>
+EXPN postmaster@host.example.org
+250 2.1.5 root <root@host.example.org>
+EXPN postmaster@miss.example.org
+250 2.1.5 <postmaster@miss.example.org>
+EXPN postmaster@host.miss.org
+250 2.1.5 <postmaster@host.miss.org>
+EXPN postmaster@host
+250 2.1.5 <postmaster@host>
+EXPN postmaster@miss
+250 2.1.5 <postmaster@miss>
+EXPN postmaster@example.org
+250 2.1.5 <postmaster@example.org>
+EXPN postmaster@miss.org
+250 2.1.5 <postmaster@miss.org>
+EXPN random2525
+550 5.1.1 random2525... User unknown
+EXPN random2525@localhost
+550 5.1.1 random2525@localhost... User unknown
+EXPN random2525@host.example.org
+550 5.1.1 random2525@host.example.org... User unknown
+EXPN random2525@miss.example.org
+250 2.1.5 <random2525@miss.example.org>
+EXPN random2525@host.miss.org
+250 2.1.5 <random2525@host.miss.org>
+EXPN random2525@host
+250 2.1.5 <random2525@host>
+EXPN random2525@miss
+250 2.1.5 <random2525@miss>
+EXPN random2525@example.org
+250 2.1.5 <random2525@example.org>
+EXPN random2525@miss.org
+250 2.1.5 <random2525@miss.org>
+Connection closed.

@@ -1,0 +1,38 @@
+$ telnet 172.27.0.2 25
+Trying 172.27.0.2...
+Connected to 172.27.0.2.
+Escape character is '^]'.
+220 host.smtp-vrfy-expn.com ESMTP Exim 4.94.2 Fri, 02 Jul 2021 09:25:38 +0000
+EHLO test
+250-host.smtp-vrfy-expn.com Hello tp-x250.local [172.27.0.1]
+250-SIZE 52428800
+250-8BITMIME
+250-PIPELINING
+250-PIPE_CONNECT
+250-CHUNKING
+250-STARTTLS
+250-PRDR
+250 HELP
+VRFY root
+501 root: recipient address must contain a domain
+VRFY root@smtp-vrfy-expn.com
+252 Administrative prohibition
+VRFY postmaster
+252 Administrative prohibition
+VRFY postmaster@smtp-vrfy-expn.com
+252 Administrative prohibition
+VRFY random2525
+501 random2525: recipient address must contain a domain
+VRFY random2525@smtp-vrfy-expn.com
+252 Administrative prohibition
+EXPN postmaster
+550 Administrative prohibition
+EXPN postmaster@smtp-vrfy-expn.com
+550 Administrative prohibition
+EXPN random2525
+550 Administrative prohibition
+EXPN random2525@smtp-vrfy-expn.com
+550 Administrative prohibition
+quit
+221 host.smtp-vrfy-expn.com closing connection
+Connection closed by foreign host.

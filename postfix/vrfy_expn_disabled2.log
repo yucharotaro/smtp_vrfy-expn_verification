@@ -1,0 +1,68 @@
+telnet 172.18.0.2 25
+Trying 172.18.0.2...
+Connected to 172.18.0.2.
+Escape character is '^]'.
+220 host.example.org ESMTP Postfix
+EHLO test
+250-host.example.org
+250-PIPELINING
+250-SIZE 10240000
+250-ETRN
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250 DSN
+VRFY root 
+502 5.5.1 VRFY command is disabled
+VRFY root@localhost
+502 5.5.1 VRFY command is disabled
+VRFY root@host.example.org
+502 5.5.1 VRFY command is disabled
+VRFY root@miss.example.org
+502 5.5.1 VRFY command is disabled
+VRFY root@host.miss.org
+502 5.5.1 VRFY command is disabled
+VRFY root@host
+502 5.5.1 VRFY command is disabled
+VRFY root@miss
+502 5.5.1 VRFY command is disabled
+VRFY root@example.org
+502 5.5.1 VRFY command is disabled
+VRFY root@miss.org
+502 5.5.1 VRFY command is disabled
+VRFY postmaster
+502 5.5.1 VRFY command is disabled
+VRFY postmaster@localhost
+502 5.5.1 VRFY command is disabled
+VRFY postmaster@host.example.org
+502 5.5.2 Error: command not recognized
+VRFY random2525
+502 5.5.1 VRFY command is disabled
+VRFY random2525@localhost
+502 5.5.1 VRFY command is disabled
+VRFY random2525@host.example.org
+502 5.5.1 VRFY command is disabled
+EXPN root
+502 5.5.2 Error: command not recognized
+EXPN root@localhost
+502 5.5.2 Error: command not recognized
+EXPN root@host.example.org
+502 5.5.2 Error: command not recognized
+EXPN root@miss.example.org
+502 5.5.2 Error: command not recognized
+EXPN root@host.miss.org
+502 5.5.2 Error: command not recognized
+EXPN root@host
+502 5.5.2 Error: command not recognized
+EXPN root@miss
+502 5.5.2 Error: command not recognized
+EXPN root@example.org
+502 5.5.2 Error: command not recognized
+EXPN root@miss.org
+502 5.5.2 Error: command not recognized
+EXPN postmaster
+502 5.5.2 Error: command not recognized
+EXPN random2525
+502 5.5.2 Error: command not recognized
+quit
+221 2.0.0 Bye
+Connection closed by foreign host.

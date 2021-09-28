@@ -1,0 +1,93 @@
+telnet 172.18.0.2 25
+Trying 172.18.0.2...
+Connected to 172.18.0.2.
+Escape character is '^]'.
+220 host.example.org ESMTP Postfix
+EHLO test
+250-host.example.org
+250-PIPELINING
+250-SIZE 10240000
+250-VRFY
+250-ETRN
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250 DSN
+VRFY root
+252 2.0.0 root
+VRFY root@localhost
+252 2.0.0 root@localhost
+VRFY root@host.example.org
+252 2.0.0 root@host.example.org
+VRFY root@miss.example.org
+252 2.0.0 root@miss.example.org
+VRFY root@host.miss.org
+252 2.0.0 root@host.miss.org
+VRFY root@host
+252 2.0.0 root@host
+VRFY root@miss
+252 2.0.0 root@miss
+VRFY root@example.org
+252 2.0.0 root@example.org
+VRFY root@miss.org
+252 2.0.0 root@miss.org
+VRFY postmaster
+252 2.0.0 postmaster
+VRFY postmaster@localhost
+252 2.0.0 postmaster@localhost
+VRFY postmaster@host.example.org
+252 2.0.0 postmaster@host.example.org
+VRFY postmaster@miss.example.org
+252 2.0.0 postmaster@miss.example.org
+VRFY postmaster@host.miss.org
+252 2.0.0 postmaster@host.miss.org
+VRFY postmaster@host
+252 2.0.0 postmaster@host
+VRFY postmaster@miss
+252 2.0.0 postmaster@miss
+VRFY postmaster@example.org
+252 2.0.0 postmaster@example.org
+VRFY postmaster@miss.org
+252 2.0.0 postmaster@miss.org
+VRFY random2525 
+550 5.1.1 <random2525>: Recipient address rejected: User unknown in local recipient table
+VRFY random2525@localhost
+550 5.1.1 <random2525@localhost>: Recipient address rejected: User unknown in local recipient table
+VRFY random2525@host.example.org
+550 5.1.1 <random2525@host.example.org>: Recipient address rejected: User unknown in local recipient table
+VRFY random2525@miss.example.org
+252 2.0.0 random2525@miss.example.org
+VRFY random2525@host.miss.org
+252 2.0.0 random2525@host.miss.org
+VRFY random2525@host
+550 5.1.1 <random2525@host>: Recipient address rejected: User unknown in local recipient table
+VRFY random2525@miss
+252 2.0.0 random2525@miss
+VRFY random2525@example.org
+550 5.1.1 <random2525@example.org>: Recipient address rejected: User unknown in local recipient table
+VRFY random2525@miss.org
+252 2.0.0 random2525@miss.org
+EXPN root
+502 5.5.2 Error: command not recognized
+EXPN root@localhost
+502 5.5.2 Error: command not recognized
+EXPN root@host.example.org
+502 5.5.2 Error: command not recognized
+EXPN root@miss.example.org
+502 5.5.2 Error: command not recognized
+EXPN root@host.miss.org
+502 5.5.2 Error: command not recognized
+EXPN root@host
+502 5.5.2 Error: command not recognized
+EXPN root@miss
+502 5.5.2 Error: command not recognized
+EXPN root@example.org
+502 5.5.2 Error: command not recognized
+EXPN root@miss.org
+502 5.5.2 Error: command not recognized
+EXPN postmaster
+502 5.5.2 Error: command not recognized
+EXPN random2525
+502 5.5.2 Error: command not recognized
+quit
+221 2.0.0 Bye
+Connection closed by foreign host.
